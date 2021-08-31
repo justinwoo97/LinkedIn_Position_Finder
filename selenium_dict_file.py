@@ -1,7 +1,7 @@
 import pymysql
 
 def data_store(data_dict):
-	db=pymysql.connect(host="localhost",user="root",password="plungein12",database="LinkedIn_db")
+	db=pymysql.connect(host="localhost",user="root",password="password",database="LinkedIn_db")
 	cur = db.cursor()
 	ins = 'insert into LinkedIn_data values(%s,%s)'
 	for key in data_dict.keys():

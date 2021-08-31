@@ -8,7 +8,7 @@ import pymysql
 from sqlalchemy import create_engine
 
 def data_extract():
-    db=pymysql.connect(host="localhost",user="root",password="plungein12",database="LinkedIn_db")
+    db=pymysql.connect(host="localhost",user="root",password="password",database="LinkedIn_db")
     cur = db.cursor()
     cur.execute("select * from LinkedIn_data")
     output = [cur.fetchall()]
@@ -45,7 +45,7 @@ import pandas as pd
 hostname="localhost"
 dbname="LinkedIn_db"
 uname="root"
-pwd="plungein12"
+pwd="password"
 tablename="LinkedIn_data"
 
 engine = create_engine("mysql+pymysql://{user}:{pw}@{host}/{db}"

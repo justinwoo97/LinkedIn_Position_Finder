@@ -15,8 +15,8 @@ driver.get('https://www.linkedin.com')
 username = driver.find_element_by_xpath("//input[@name='session_key']")
 password = driver.find_element_by_xpath("//input[@name='session_password']")
 
-username.send_keys('justin.qizhen.ding@gmail.com')
-password.send_keys('plungein12')
+username.send_keys('test@gmail.com')
+password.send_keys('test')
 
 submit = driver.find_element_by_xpath("//button[@type='submit']").click() 
 
